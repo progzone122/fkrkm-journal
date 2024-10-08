@@ -34,7 +34,7 @@
     }
 </script>
 
-<div class="w-full h-full bg-primary-600 flex font-bold rounded-lg">
+<div class="w-full h-full bg-primary-600 text-white flex font-bold rounded-lg">
     <div class="w-auto h-full bg-primary-800 flex items-center py-4">
         <p class="w-[3em] writing-mode-vertical text-lg text-center flex items-center">{day}</p>
     </div>
