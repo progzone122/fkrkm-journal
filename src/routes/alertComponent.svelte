@@ -8,7 +8,7 @@
 
 {#if type == 'warning'}
 	<div class="w-full bg-warning flex items-center gap-4 p-5 rounded-lg font-bold">
-		<img class="w-14 h-14" src="/warning-white.png" alt="" />
+		<img class="w-14 h-14" src="/fkrkm-journal/warning-white.png" alt="" />
         <div>
             <h3>{message}</h3>
             {#if url}
