@@ -1,0 +1,38 @@
+{
+    "Основи інтернету речей": {
+        "meet": "https://meet.google.com/pbq-huap-teu",
+        "moodle": "https://moodle.krkm.dnu.edu.ua/mod/attendance/view.php?id=30189"
+    },
+    "ОБД": {
+        "meet": "https://meet.google.com/vja-yaza-zsw",
+        "moodle": "https://moodle.krkm.dnu.edu.ua/mod/attendance/view.php?id=21338"
+    },
+    "Основи кібербезпеки": {
+        "meet": {
+            "0": "https://meet.google.com/gki-tibq-fpv",
+            "2": "https://meet.google.com/vrp-pftx-uzb",
+            "4": "https://meet.google.com/qcn-ckxp-krp"
+        },
+        "moodle": "https://moodle.krkm.dnu.edu.ua/mod/attendance/view.php?id=29956"
+    },
+    "ТЙМС": {
+        "meet": "https://meet.google.com/vyd-aifj-cjf",
+        "moodle": "https://moodle.krkm.dnu.edu.ua/course/view.php?id=406"
+    },
+    "Практикум з системного адміністрування": {
+        "meet": "https://meet.google.com/jfn-bacp-upy",
+        "moodle": "https://moodle.krkm.dnu.edu.ua/mod/attendance/view.php?id=23192"
+    },
+    "Основи підприємницької діяльності": {
+        "meet": "https://meet.google.com/ogk-bivn-yuh",
+        "moodle": "https://moodle.krkm.dnu.edu.ua/course/view.php?id=468"
+    },
+    "Фізичне виховання": {
+        "meet": "https://meet.google.com/uuy-wsau-hgf",
+        "moodle": "https://moodle.krkm.dnu.edu.ua/course/view.php?id=123"
+    },
+    "Комп'ютерні системи та мережі": {
+        "meet": "https://moodle.krkm.dnu.edu.ua/course/view.php?id=45",
+        "moodle": "https://moodle.krkm.dnu.edu.ua/mod/attendance/view.php?id=23468"
+    }
+}
