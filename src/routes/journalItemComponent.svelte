@@ -28,11 +28,11 @@
                             <!-- svelte-ignore missing-declaration -->
                             <button class="mt-2 bg-white text-primary-600 rounded px-4 py-2"
                             on:click={() => go_meet(urls[lesson].meet, dayIndex)}>
-                                <img class="w-5" src="/meet.png" alt="Посилання на конференцію">
+                                <img class="w-5" src="/fkrkm-journal/meet.png" alt="Посилання на конференцію">
                             </button>
                             <button class="mt-2 bg-white text-primary-600 rounded px-4 py-2"
                             on:click={() => go_moodle(urls[lesson].moodle)}>
-                                <img class="w-5" src="/moodle.png" alt="Посилання на відвідування">
+                                <img class="w-5" src="/fkrkm-journal/moodle.png" alt="Посилання на відвідування">
                             </button>
                         </div>
                     {:else}
