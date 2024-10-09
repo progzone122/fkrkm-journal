@@ -1,30 +1,30 @@
 <script lang="ts">
     // // components
-	// import JournalItemComponent from "./journalItemComponent.svelte";
-    // import AlertComponent from "./alertComponent.svelte";
+	import JournalItemComponent from "./journalItemComponent.svelte";
+    import AlertComponent from "./alertComponent.svelte";
 
     // // load data from json
-    // import { go_meet, journal, urls } from "../data/index.ts";
-    // import { get_active_lesson, get_dtw_now } from "../lib/index.ts";
+    import { go_meet, journal, urls } from "../data/index.ts";
+    import { get_active_lesson, get_dtw_now } from "../lib/index.ts";
 
-    // let activeLesson: string | null = null;
-    // let activeLesson_message: string = "";
+    let activeLesson: string | null = null;
+    let activeLesson_message: string = "";
 
-    // const updateActiveLesson = () => {
-    //     const lesson = get_active_lesson();
-    //     if (lesson) {
-    //         activeLesson_message = `Згідно за розкладом, зараз триває пара "${lesson}"`;
-    //         activeLesson = lesson;
-    //     } else {
-    //         activeLesson_message = "";
-    //         console.log("Активный урок не найден");
-    //     }
-    // };
+    const updateActiveLesson = () => {
+        const lesson = get_active_lesson();
+        if (lesson) {
+            activeLesson_message = `Згідно за розкладом, зараз триває пара "${lesson}"`;
+            activeLesson = lesson;
+        } else {
+            activeLesson_message = "";
+            console.log("Активный урок не найден");
+        }
+    };
 
-    // updateActiveLesson();
-    // setInterval(updateActiveLesson, 1 * 60 * 1000);
+    updateActiveLesson();
+    setInterval(updateActiveLesson, 1 * 60 * 1000);
 </script>
-<!-- <div class="w-full p-5">
+<div class="w-full p-5">
     {#if activeLesson }
             <AlertComponent
             type="warning"
@@ -40,7 +40,4 @@
         dayIndex={index}
         lessons={lessons} />
     {/each}
-</div> -->
-<div>
-    <h1>hello world!</h1>
 </div>
