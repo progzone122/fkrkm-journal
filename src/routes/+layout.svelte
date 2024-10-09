@@ -5,5 +5,5 @@
     export const prerender = true;
 </script>
 
-<!-- <ModeWatcher /> -->
+<ModeWatcher />
 <slot />
