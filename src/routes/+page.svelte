@@ -27,7 +27,6 @@
 </script>
 <div class="w-full p-5">
     {#if activeLesson }
-    {activeLesson ? urls[activeLesson] : ""}
             <AlertComponent
             type="warning"
             message={activeLesson_message ? activeLesson_message : ""}
