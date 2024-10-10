@@ -1,10 +1,12 @@
 import dayjs from 'dayjs';
+import isBetween from 'dayjs/plugin/isBetween';
 import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
 import { timeSlots, journal } from "../data/index.js";
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
+dayjs.extend(isBetween);
 
 class Dtw {
     index: number;
@@ -37,14 +39,19 @@ const get_dtw_now = (): Dtw => {
 // Функция для получения активного урока на основе текущего времени
 const get_active_lesson = (): string | null => {
     const date_now: dayjs.Dayjs = dayjs(); // Используем Day.js
-    const current_time = date_now.format('HH:mm'); // Получаем текущее время в формате "HH:mm"
+    // const current_time = date_now.format('HH:mm'); // Получаем текущее время в формате "HH:mm"
 
     // Проходим по всем временным слотам уроков
     for (let i = 0; i < timeSlots.length; i++) {
-        const [startTime, endTime]: [string, string] = timeSlots[i];
+        let [startTimeStr, endTimeStr]: [string, string] = timeSlots[i];
+
+        const startTime = dayjs(startTimeStr, 'HH:mm');
+        const endTime = dayjs(endTimeStr, 'HH:mm');
+        
+        // console.log(startTime, endTime);
 
         // Проверяем, находится ли текущее время между временем начала и конца урока
-        if (current_time >= startTime && current_time <= endTime) {
+        if (date_now.isBetween(startTime, endTime, null, '[]')) {
             const dtw: string = get_dtw_now().name;
 
             if (dtw !== "Субота" && dtw !== "Неділя") {
