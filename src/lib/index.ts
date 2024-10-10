@@ -26,8 +26,6 @@ const get_dtw_now = (): Dtw => {
         "Середа",
         "Четвер",
         "П’ятниця",
-        "Субота",
-        "Неділя"
     ];
 
     const dayIndex = dayjs().day();
@@ -55,7 +53,7 @@ const get_active_lesson = (): string | null => {
             const dtw: string = get_dtw_now().name;
 
             if (dtw !== "Субота" && dtw !== "Неділя") {
-                let lesson: string = journal[dtw][i];
+                let lesson: string = journal[dtw][i + 1];
                 
                 if (lesson !== null) {
                     return lesson;
