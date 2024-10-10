@@ -15,6 +15,7 @@
         if (lesson) {
             activeLesson_message = `Згідно за розкладом, зараз триває пара "${lesson}"`;
             activeLesson = lesson;
+            console.log(urls[activeLesson])
         } else {
             activeLesson_message = "";
             console.log("Активный урок не найден");
@@ -26,6 +27,7 @@
 </script>
 <div class="w-full p-5">
     {#if activeLesson }
+    {activeLesson ? urls[activeLesson] : ""}
             <AlertComponent
             type="warning"
             message={activeLesson_message ? activeLesson_message : ""}
