@@ -31,7 +31,7 @@ const get_dtw_now = (): Dtw => {
     ];
 
     const dayIndex = dayjs().day();
-    const ukrDayIndex = (dayIndex + 6) % 7;
+    const ukrDayIndex = (dayIndex + 5) % 7;
 
     return new Dtw(ukrDayIndex, daysOfWeekUkr[ukrDayIndex]);
 }
