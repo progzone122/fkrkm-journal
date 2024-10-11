@@ -32,8 +32,8 @@ const get_dtw_now = (): Dtw => {
 
     const dayIndex = dayjs().day();
     const ukrDayIndex = (dayIndex + 5) % 7;
-
-    return new Dtw(ukrDayIndex, daysOfWeekUkr[ukrDayIndex]);
+    console.log(ukrDayIndex);
+    return new Dtw(ukrDayIndex + 1, daysOfWeekUkr[ukrDayIndex]);
 }
 
 // Функция для получения активного урока на основе текущего времени
