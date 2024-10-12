@@ -10,20 +10,20 @@
     let activeLesson: string | null = null;
     let activeLesson_message: string = "";
 
-    const updateActiveLesson = () => {
-        const lesson = get_active_lesson();
-        if (lesson) {
-            activeLesson_message = `Згідно за розкладом, зараз триває пара "${lesson}"`;
-            activeLesson = lesson;
-            console.log(urls[activeLesson])
-        } else {
-            activeLesson_message = "";
-            console.log("Активный урок не найден");
-        }
-    };
+    // const updateActiveLesson = () => {
+    //     const lesson = get_active_lesson();
+    //     if (lesson) {
+    //         activeLesson_message = `Згідно за розкладом, зараз триває пара "${lesson}"`;
+    //         activeLesson = lesson;
+    //         console.log(urls[activeLesson])
+    //     } else {
+    //         activeLesson_message = "";
+    //         console.log("Активный урок не найден");
+    //     }
+    // };
 
-    updateActiveLesson();
-    setInterval(updateActiveLesson, 1 * 60 * 1000);
+    // updateActiveLesson();
+    // setInterval(updateActiveLesson, 1 * 60 * 1000);
 </script>
 <div class="w-full p-5">
     {#if activeLesson }
